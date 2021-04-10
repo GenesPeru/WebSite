@@ -5,7 +5,7 @@ export default ({ name, role, lastName, image }) => (
   <>
     <Box>
       <Card>
-        <Photo src={image} alt='' />
+        <Photo src={image} alt={role} loading='lazy' />
         <Name>
           {name}
           {lastName}

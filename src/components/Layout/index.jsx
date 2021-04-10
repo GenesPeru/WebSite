@@ -4,7 +4,7 @@ import Nav from './Nav';
 import Footer from './Footer';
 import { Context } from '@src/Context';
 
-export default ({ children }) => {
+export default ({ children, title, description }) => {
   return (
     <>
       <Bar />

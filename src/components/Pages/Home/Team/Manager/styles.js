@@ -6,6 +6,9 @@ export const Box = styled.div`
   @media screen and (min-width: 48em) {
     min-width: 50vw;
   }
+  @media screen and (min-width: 64em) {
+    min-width: 33.333vw;
+  }
 `;
 
 export const Card = styled.div`

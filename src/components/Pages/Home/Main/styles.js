@@ -59,4 +59,7 @@ export const Buttons = styled.div`
     width: 80%;
     margin: 0 auto;
   }
+  @media screen and (min-width: 64em) {
+    width: 55%;
+  }
 `;

@@ -2,7 +2,9 @@ import styled, { css } from 'styled-components';
 
 export const Title = styled.h1`
   text-align: center;
-  padding-bottom: 20px;
+  margin-top: 45px;
+  margin-bottom: 30px;
+  font-size: 40px;
 `;
 export const Container = styled.div`
   width: 90vw;

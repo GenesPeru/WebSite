@@ -1,52 +1,52 @@
-import React from 'react';
+import React, { Suspense } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { GlobalStyles } from './GlobalStyles';
 import Layout from './components/Layout';
-import Home from './components/Pages/Home';
-import Categories from './components/Pages/Categories';
-import NotFound from './components/Pages/NotFound';
-import ListOfBusinesses from './components/Pages/Categories/ListOfBusinesses';
-import Volunteering from './components/Pages/Volunteering';
-import ListOfVolunteers from './components/Pages/Volunteering/ListOfVolunteers';
-
 import Context from './Context';
 
-import {
-  BrowserRouter as Router,
-  Route,
-  Link,
-  Switch,
-  Redirect,
-  useLocation,
-} from 'react-router-dom';
-
 export default () => {
+  const Home = React.lazy(() => import('./components/Pages/Home'));
+  const Categories = React.lazy(() => import('./components/Pages/Categories'));
+  const ListOfBusinesses = React.lazy(() =>
+    import('./components/Pages/Categories/ListOfBusinesses')
+  );
+  const ListOfVolunteers = React.lazy(() =>
+    import('./components/Pages/Volunteering/ListOfVolunteers')
+  );
+  const Volunteering = React.lazy(() =>
+    import('./components/Pages/Volunteering')
+  );
+  const NotFound = React.lazy(() => import('./components/Pages/NotFound'));
+
   return (
-    <Context.Provider>
-      <GlobalStyles />
-      <Router>
-        <Layout>
-          <Switch>
-            <Route exact path='/'>
-              <Home />
-            </Route>
-            <Route exact path='/categorias' component={Categories}></Route>
-            <Route
-              exact
-              path='/categorias/:id'
-              component={ListOfBusinesses}
-            ></Route>
-            <Route exact path='/voluntariado' component={Volunteering} />
-            <Route
-              exact
-              path='/voluntariado/:id'
-              component={ListOfVolunteers}
-            ></Route>
-            <Route path='*'>
-              <NotFound />
-            </Route>
-          </Switch>
-        </Layout>
-      </Router>
-    </Context.Provider>
+    <Suspense fallback={<div />}>
+      <Context.Provider>
+        <GlobalStyles />
+        <Router>
+          <Layout>
+            <Switch>
+              <Route exact path='/'>
+                <Home />
+              </Route>
+              <Route exact path='/categorias' component={Categories}></Route>
+              <Route
+                exact
+                path='/categorias/:id'
+                component={ListOfBusinesses}
+              ></Route>
+              <Route exact path='/voluntariado' component={Volunteering} />
+              <Route
+                exact
+                path='/voluntariado/:id'
+                component={ListOfVolunteers}
+              ></Route>
+              <Route path='*'>
+                <NotFound />
+              </Route>
+            </Switch>
+          </Layout>
+        </Router>
+      </Context.Provider>
+    </Suspense>
   );
 };
