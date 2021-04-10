@@ -8,17 +8,17 @@ export default () => (
   <Section className='pure-g'>
     <Cards>
       <Card className='pure-u-1-2'>
-        <Img src={Hands} alt='' />
+        <Img src={Hands} alt='imagen de manos entrecruzadas' />
         <Number>+200</Number>
         <Title>Agremiados</Title>
       </Card>
       <Card className='pure-u-1-2'>
-        <Img src={People} alt='' />
+        <Img src={People} alt='imagen de un equipo' />
         <Number>+100</Number>
         <Title>Voluntarios</Title>
       </Card>
       <Card className='pure-u-1'>
-        <Img src={Box} alt='' />
+        <Img src={Box} alt='imagen de una caja de ideas' />
         <Number>+100</Number>
         <Title>Proyectos</Title>
       </Card>

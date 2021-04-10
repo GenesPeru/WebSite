@@ -1,11 +1,5 @@
 import React from 'react';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  useParams,
-} from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { useFindBusinessesByCaterory } from '@src/hooks/useAgremiadosData';
 import { Title, Container } from './styles';
 import Business from '../Business';
