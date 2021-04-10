@@ -1,7 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   mode: 'development',
@@ -12,6 +11,11 @@ module.exports = {
   },
   resolve: {
     extensions: ['.js', '.jsx'],
+    alias: {
+      '@img': path.resolve(__dirname, 'src/assets/'),
+      '@components': path.resolve(__dirname, 'src/components/'),
+      '@src': path.resolve(__dirname, 'src/'),
+    },
   },
   module: {
     rules: [
@@ -51,11 +55,13 @@ module.exports = {
     }),
     new MiniCssExtractPlugin({
       filename: 'css/[name].[contenthash].css',
-    })
+    }),
   ],
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
+    disableHostCheck: true,
     compress: true,
-    port: 4000,
+    historyApiFallback: true,
+    port: 4005,
   },
 };

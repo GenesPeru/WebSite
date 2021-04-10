@@ -15,6 +15,9 @@ module.exports = {
   },
   resolve: {
     extensions: ['.js', '.jsx'],
+    alias: {
+      assets: path.resolve(__dirname, 'src/assets/'),
+    },
   },
   module: {
     rules: [
