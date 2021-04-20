@@ -12,13 +12,7 @@ export default () => {
     return null;
   } else {
     return ReactDOM.createPortal(
-      <Main
-        className={
-          bar
-            ? 'animate__animated animate__fadeInLeft'
-            : 'animate__animated animate__fadeInRight'
-        }
-      >
+      <Main>
         <Box>
           <Img src={Logo} alt='Logo de Genes Perú' onClick={handleBar} />
         </Box>

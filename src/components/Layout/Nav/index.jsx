@@ -29,7 +29,10 @@ export default () => {
           <NavMovil>
             <i className='fas fa-bars' style={barStyle} onClick={handleBar}></i>
           </NavMovil>
-          <LogoMovil src={Logo} />
+          <LogoMovil
+            className='animate__animated animate__bounceInLeft'
+            src={Logo}
+          />
         </>
       ) : (
         <NavDesktop>

@@ -4,7 +4,7 @@ import Block from '@img/TwoPerson-Block.svg';
 import Button from '@components/Button';
 
 export default () => (
-  <Main>
+  <Main className='animate__animated animate__bounceInRight'>
     <Svg src={Block} alt='Dos personas en un campo sosteniendo bloques' />
     <Container>
       <Title>Gremio Nacional De Emprendimiento Sostenible del Perú</Title>
