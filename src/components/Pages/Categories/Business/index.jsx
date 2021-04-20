@@ -4,7 +4,7 @@ import { Box, Img } from './styles';
 export default ({ name, image = 'das' }) => (
   <>
     <Box>
-      <Img src={image} alt='logo' />
+      <Img src={image} alt={name} />
       <Title>{name}</Title>
       <Button>acceder</Button>
     </Box>
