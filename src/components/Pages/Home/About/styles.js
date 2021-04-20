@@ -20,7 +20,7 @@ export const Description = styled.p`
   margin: 0 auto;
   margin-bottom: 50px;
   text-align: center;
-  width: 90%;
+  width: 80%;
   font-size: 23px;
-  line-height: 40px;
+  line-height: 37px;
 `;
