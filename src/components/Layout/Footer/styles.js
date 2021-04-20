@@ -14,7 +14,10 @@ export const Footer = styled.footer`
 `;
 
 export const BoxImg = styled.div`
-  width: 33.333%;
+  width: 100%;
+  @media screen and (min-width: 64em) {
+    width: 33.333%;
+  }
 `;
 
 export const Img = styled.img`
