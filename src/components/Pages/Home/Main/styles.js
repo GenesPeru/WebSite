@@ -54,12 +54,7 @@ export const Svg = styled.img`
 export const Buttons = styled.div`
   padding-top: 30px;
   @media screen and (min-width: 48em) {
-    padding-top: 0;
     display: flex;
-    width: 80%;
-    margin: 0 auto;
-  }
-  @media screen and (min-width: 64em) {
-    width: 55%;
+    justify-content: center;
   }
 `;

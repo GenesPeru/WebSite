@@ -24,3 +24,8 @@ export const Description = styled.p`
   font-size: 23px;
   line-height: 37px;
 `;
+
+export const BoxButton = styled.div`
+  display: flex;
+  justify-content: center;
+`;

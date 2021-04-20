@@ -18,9 +18,10 @@ export const StyledButton = styled.button`
       border: none;
       :box-shadow: 0px 1.6878px 3.37561px rgba(0, 0, 0, 0.25);
     `}
-  @media screen and (min-width: 64em) {
-    font-size: 25px;
+  @media screen and (min-width: 48em) {
+    font-size: 23px;
     width: 185px;
-    height: 55px;
+    height: 52px;
+    margin: 10px;
   }
 `;

@@ -10,6 +10,16 @@ html {
     box-sizing: inherit;
   }
 
+  h1,li{
+    color: #323131;
+  }
+
+  h2,h3{
+    color: #4B4A4A;
+  }
+p{
+  color:#2B2B2B;
+}
   ul, li, h1, h2, h3, p, button {
     margin: 0;
     padding: 0;
