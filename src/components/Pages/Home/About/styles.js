@@ -11,7 +11,16 @@ export const Section = styled.section`
 export const Title = styled.h2`
   font-size: 50px;
   text-align: center;
-  color: linear-gradient(90deg, #65bd60 0%, #5ac1a8 25%, #3ec6ed 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(
+    90deg,
+    #65bd60 0%,
+    #5ac1a8 25%,
+    #3ec6ed 50%
+  );
+
   padding-top: 30px;
   padding-bottom: 30px;
 `;
