@@ -54,9 +54,6 @@ export const Category = styled.li`
   @media screen and (min-width: 64em) {
     font-size: 30px;
   }
-  @media screen and (min-width: 80em) {
-    font-size: 35px;
-  }
 `;
 
 export const Anchor = styled(Link)`

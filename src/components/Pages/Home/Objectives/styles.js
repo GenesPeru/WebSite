@@ -18,19 +18,6 @@ export const Content = styled.div`
   }
 `;
 
-export const Content2 = styled.div`
-  height: 100vh;
-  width: 100%;
-  @media screen and (min-width: 48em) {
-    display: flex;
-    height: 45vh;
-    justify-content: center;
-    align-items: center;
-
-    direction: rtl;
-  }
-`;
-
 export const Description = styled.div`
   @media screen and (min-width: 48em) {
     height: fit-content;
@@ -61,6 +48,6 @@ export const Text = styled.p`
   width: 80%;
   text-align: center;
   margin: 0 auto;
-  font-size: 25px;
-  line-height: 42px;
+  font-size: 23px;
+  line-height: 40px;
 `;

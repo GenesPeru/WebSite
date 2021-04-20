@@ -21,6 +21,6 @@ export const Description = styled.p`
   margin-bottom: 50px;
   text-align: center;
   width: 90%;
-  font-size: 30px;
+  font-size: 23px;
   line-height: 40px;
 `;

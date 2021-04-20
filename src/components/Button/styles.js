@@ -20,7 +20,7 @@ export const StyledButton = styled.button`
     `}
   @media screen and (min-width: 64em) {
     font-size: 25px;
-    width: 190px;
-    height: 60px;
+    width: 185px;
+    height: 55px;
   }
 `;

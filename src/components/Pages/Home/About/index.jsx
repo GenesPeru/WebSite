@@ -8,7 +8,8 @@ export default () => (
       <Title>¿Quienes somos?</Title>
       <Description>
         Somos una plataforma social sin fines de lucro que une a personas
-        naturales y juridicas con emprendimientos sostenibles.
+        naturales y jurídicas con emprendimientos sostenibles a nivel nacional,
+        siendo pioneros en Latinoaerica.
       </Description>
       <Button primary>Leer más</Button>
     </Section>
