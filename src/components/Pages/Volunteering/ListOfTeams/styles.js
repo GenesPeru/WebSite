@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const Title = styled.h1`
   text-align: center;
@@ -14,4 +15,10 @@ export const Container = styled.div`
   @media screen and (min-width: 48em) {
     grid-template-columns: 1fr 1fr;
   }
+`;
+
+export const LinkTeam = styled(Link)`
+  width: 60%;
+  align-self: center;
+  justify-self: center;
 `;

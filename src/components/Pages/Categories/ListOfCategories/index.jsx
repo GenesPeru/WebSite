@@ -1,8 +1,7 @@
 import React from 'react';
-import { Container } from './styles';
+import { Container, LinkCategory } from './styles';
 import { useCategoriesData } from '@src/hooks/useAgremiadosData';
 import Category from '../Category';
-import { Link } from 'react-router-dom';
 
 export default () => {
   const { categories = [] } = useCategoriesData();
@@ -11,9 +10,9 @@ export default () => {
     <>
       <Container>
         {categories.map((category) => (
-          <Link to={`/categorias/${category.id}`} key={category.id}>
+          <LinkCategory to={`/categorias/${category.id}`} key={category.id}>
             <Category name={category.name} image={category.imageUrl} />
-          </Link>
+          </LinkCategory>
         ))}
       </Container>
     </>

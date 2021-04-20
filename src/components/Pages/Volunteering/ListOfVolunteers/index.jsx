@@ -16,10 +16,11 @@ export default () => {
   return (
     <main>
       <Title>Voluntariado {listOfVolunteers.semester}</Title>
+
       <Category>
-        <TitleCategory>Capacitaciones</TitleCategory>
+        <TitleCategory>Marketplace</TitleCategory>
         <Container>
-          {capa.map((volunteer) => {
+          {market.map((volunteer) => {
             return (
               <Volunteer
                 key={volunteer.id}
@@ -30,11 +31,10 @@ export default () => {
           })}
         </Container>
       </Category>
-
       <Category>
-        <TitleCategory>Marketplace</TitleCategory>
+        <TitleCategory>Capacitaciones</TitleCategory>
         <Container>
-          {market.map((volunteer) => {
+          {capa.map((volunteer) => {
             return (
               <Volunteer
                 key={volunteer.id}

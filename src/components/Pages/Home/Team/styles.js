@@ -9,7 +9,7 @@ export const Section = styled.section`
   flex-direction: column;
   justify-content: center;
   @media screen and (min-width: 48em) {
-    height: 100vh;
+    height: 70vh;
     margin-bottom: 0;
   }
 `;

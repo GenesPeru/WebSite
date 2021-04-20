@@ -1,8 +1,7 @@
 import React from 'react';
 import Team from '../Team';
-import { Link } from 'react-router-dom';
 import { useVolunteersData } from '@src/hooks/useVolunteersData';
-import { Title, Container } from './styles';
+import { Title, Container, LinkTeam } from './styles';
 
 export default () => {
   const { teams = [] } = useVolunteersData();
@@ -12,9 +11,9 @@ export default () => {
       <Title>Voluntariado</Title>
       <Container>
         {teams.map((team) => (
-          <Link key={team.id} to={`/voluntariado/${team.id}`}>
+          <LinkTeam key={team.id} to={`/voluntariado/${team.id}`}>
             <Team name={team.name} semester={team.semester} />
-          </Link>
+          </LinkTeam>
         ))}
       </Container>
     </main>

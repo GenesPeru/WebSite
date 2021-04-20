@@ -1,24 +1,32 @@
 import styled from 'styled-components';
 
 export const Box = styled.div`
-  color: #36558f;
   background: #f1f3f7;
-  padding: 30px 0;
-  width: 60%;
+  width: 100%;
   height: 150px;
-  margin: 20px auto;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  :hover {
+    background-color: #36558f;
+
+    border-radius: 28.534px;
+  }
+  :hover h2,
+  :hover p {
+    color: white;
+  }
 `;
 
 export const TitleTeam = styled.h2`
   font-size: 30px;
+  color: #36558f;
 `;
 
 export const Semester = styled.p`
   padding-top: 10px;
   font-size: 23px;
+  color: black;
 `;

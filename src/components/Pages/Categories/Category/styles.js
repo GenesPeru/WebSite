@@ -6,10 +6,12 @@ export const Box = styled.div`
   justify-content: center;
   align-items: center;
   height: 200px;
-  &:hover {
+  :hover {
     background-color: #36558f;
-    color: white;
     border-radius: 28.534px;
+  }
+  :hover p {
+    color: white;
   }
 `;
 
@@ -25,4 +27,5 @@ export const Name = styled.p`
   padding-top: 20px;
   width: 70%;
   color: black;
+  font-size: 18px;
 `;
