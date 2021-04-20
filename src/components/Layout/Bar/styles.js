@@ -10,6 +10,7 @@ export const Main = styled.main`
   left: 0;
   bottom: 0;
   right: 0;
+  transition: color 0.4s ease;
 `;
 
 export const Box = styled.div`
