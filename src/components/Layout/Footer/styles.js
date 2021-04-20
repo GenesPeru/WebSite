@@ -9,16 +9,20 @@ export const Footer = styled.footer`
   @media screen and (min-width: 64em) {
     flex-direction: row;
     height: 20vh;
+    min-height: 150px;
   }
+`;
+
+export const BoxImg = styled.div`
+  width: 33.333%;
 `;
 
 export const Img = styled.img`
   display: flex;
   margin: 0 auto;
-  @media screen and (min-width: 64em) {
-    width: 33.333%;
+  @media screen and (min-width: 48em) {
     padding: 10px 80px;
-    max-width: 430px;
+    max-width: 370px;
   }
 `;
 

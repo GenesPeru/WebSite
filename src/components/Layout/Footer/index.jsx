@@ -1,6 +1,15 @@
 import React from 'react';
 import LogoBlack from '@img/LogoBlack.svg';
-import { Footer, Img, Copy, Rights, Network, Social, BoxCopy } from './styles';
+import {
+  Footer,
+  BoxImg,
+  Img,
+  Copy,
+  Rights,
+  Network,
+  Social,
+  BoxCopy,
+} from './styles';
 
 const iconoStyle = {
   fontSize: '25px',
@@ -9,7 +18,10 @@ const iconoStyle = {
 
 export default () => (
   <Footer>
-    <Img src={LogoBlack} alt='Logo' />
+    <BoxImg>
+      <Img src={LogoBlack} alt='Logo' />
+    </BoxImg>
+
     <BoxCopy>
       <Copy>© Copyright 2021 Genes Perú</Copy>
       <Rights>All rights reserved</Rights>

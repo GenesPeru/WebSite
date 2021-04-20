@@ -2,25 +2,24 @@ import styled from 'styled-components';
 
 export const Section = styled.section`
   width: 100%;
+  min-height: 950px;
 `;
 
 export const Content = styled.div`
-  height: 100vh;
   width: 100%;
   @media screen and (min-width: 48em) {
     display: flex;
     height: 45vh;
     justify-content: center;
     align-items: center;
-    &::nth-child(1) {
-      direction: rtl;
-    }
+    min-height: 500px;
   }
 `;
 
 export const Description = styled.div`
   @media screen and (min-width: 48em) {
     height: fit-content;
+    width: 50vw;
   }
 `;
 
@@ -41,6 +40,7 @@ export const Img = styled.img`
   @media screen and (min-width: 48em) {
     width: 50%;
     height: fit-content;
+    max-width: 500px;
   }
 `;
 
@@ -49,5 +49,8 @@ export const Text = styled.p`
   text-align: center;
   margin: 0 auto;
   font-size: 23px;
-  line-height: 37px;
+  line-height: 40px;
+  @media screen and (min-width: 48em) {
+    text-align: start;
+  }
 `;

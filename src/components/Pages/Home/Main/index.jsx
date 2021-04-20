@@ -9,8 +9,8 @@ export default () => (
     <Container>
       <Title>Gremio Nacional De Emprendimiento Sostenible del Perú</Title>
       <Buttons>
-        <Button primary>Unirse</Button>
-        <Button>Ver más</Button>
+        <Button primary>Donar</Button>
+        <Button>Unirse</Button>
       </Buttons>
     </Container>
   </Main>

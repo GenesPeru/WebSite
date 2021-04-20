@@ -5,19 +5,19 @@ import Hands from '@img/Hands.svg';
 import People from '@img/People.svg';
 
 export default () => (
-  <Section className='pure-g'>
+  <Section>
     <Cards>
-      <Card className='pure-u-1-2'>
+      <Card>
         <Img src={Hands} alt='imagen de manos entrecruzadas' />
         <Number>+200</Number>
         <Title>Agremiados</Title>
       </Card>
-      <Card className='pure-u-1-2'>
+      <Card>
         <Img src={People} alt='imagen de un equipo' />
         <Number>+100</Number>
         <Title>Voluntarios</Title>
       </Card>
-      <Card className='pure-u-1'>
+      <Card>
         <Img src={Box} alt='imagen de una caja de ideas' />
         <Number>+100</Number>
         <Title>Proyectos</Title>

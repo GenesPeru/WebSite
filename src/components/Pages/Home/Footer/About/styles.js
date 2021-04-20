@@ -8,6 +8,7 @@ export const Section = styled.section`
   @media screen and (min-width: 48em) {
     flex-direction: row;
     height: 50vh;
+    height: 500px;
   }
 `;
 

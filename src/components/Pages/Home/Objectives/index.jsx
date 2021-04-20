@@ -34,7 +34,7 @@ export default () => {
               </Text>
             )}
           </Description>
-          <Img src={Mision} alt='' />
+          <Img src={Mision} alt='Hombre disparando con un arco a una diana' />
         </Content>
         <Content>
           {window == 'movil' ? (
@@ -50,7 +50,7 @@ export default () => {
             </>
           ) : (
             <>
-              <Img src={Vision} alt='' />
+              <Img src={Vision} alt='2 personas celembrando con una copa' />
               <Description>
                 <Title>Vision</Title>
                 <Text>

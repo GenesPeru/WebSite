@@ -6,6 +6,10 @@ export const Section = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  @media screen and (min-width: 48em) {
+    height: 70vh;
+    min-height: 700px;
+  }
 `;
 
 export const Title = styled.h2`
@@ -23,6 +27,9 @@ export const Title = styled.h2`
 
   padding-top: 30px;
   padding-bottom: 30px;
+  @media screen and (min-width: 48em) {
+    font-size: 65px;
+  }
 `;
 
 export const Description = styled.p`
