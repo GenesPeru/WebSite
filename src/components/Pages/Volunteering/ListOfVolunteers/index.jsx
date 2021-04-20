@@ -7,7 +7,6 @@ import { Title, Container, TitleCategory, Category } from './styles';
 export default () => {
   const { id } = useParams();
   const { listOfVolunteers } = useFindVolunteersByTeam(id);
-  console.log(listOfVolunteers);
   const volunteers =
     listOfVolunteers.volunteers != undefined ? listOfVolunteers.volunteers : [];
 

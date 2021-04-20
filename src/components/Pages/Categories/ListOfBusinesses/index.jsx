@@ -7,7 +7,6 @@ import Business from '../Business';
 export default () => {
   const { id } = useParams();
   const { listOfBusinesses } = useFindBusinessesByCaterory(id);
-  console.log(listOfBusinesses.businesses);
   const data =
     listOfBusinesses.businesses != undefined ? listOfBusinesses.businesses : [];
   return (

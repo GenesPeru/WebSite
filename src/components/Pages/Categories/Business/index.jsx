@@ -1,5 +1,6 @@
 import React from 'react';
-import { Box, Img } from './styles';
+import { Title, Box, Img } from './styles';
+import Button from '@src/components/Button';
 
 export default ({ name, image = 'das' }) => (
   <>

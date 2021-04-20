@@ -7,7 +7,6 @@ import { Title, Container } from './styles';
 export default () => {
   const { teams = [] } = useVolunteersData();
 
-  console.log(teams);
   return (
     <main>
       <Title>Voluntariado</Title>

@@ -5,7 +5,6 @@ import Manager from './../Manager';
 
 export default () => {
   const { managers, loading, error } = useManagersData();
-  console.log(managers);
   return (
     <Container>
       {managers.map((manager) => (
