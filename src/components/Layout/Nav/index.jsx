@@ -32,12 +32,13 @@ export default () => {
           <LogoMovil
             className='animate__animated animate__bounceInLeft'
             src={Logo}
+            alt='Logo de Genes Perú'
           />
         </>
       ) : (
         <NavDesktop>
           <LogoBox>
-            <LogoDesktop src={Logo} alt='' />
+            <LogoDesktop src={Logo} alt='Logo de Genes Perú' />
           </LogoBox>
 
           <Categories>
