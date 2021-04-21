@@ -9,12 +9,13 @@ export default () => {
   const { listOfBusinesses } = useFindBusinessesByCaterory(id);
   const data =
     listOfBusinesses.businesses != undefined ? listOfBusinesses.businesses : [];
+  console.log(data);
   return (
     <>
       <Title>{listOfBusinesses.name}</Title>
       <Container>
         {data.map((data) => (
-          <Business key={data.id} name={data.name} />
+          <Business key={data.id} name={data.name} image={data.imageUrl} />
         ))}
       </Container>
     </>
