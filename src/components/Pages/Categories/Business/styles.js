@@ -7,6 +7,8 @@ export const Box = styled.div`
   width: 70%;
   height: 350px;
   box-shadow: 0px 0.862806px 3.45122px rgba(0, 0, 0, 0.25);
+  align-items: center;
+  max-width: 300px;
 `;
 
 export const Img = styled.img`
