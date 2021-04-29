@@ -12,4 +12,7 @@ export const Container = styled.div`
   @media screen and (min-width: 48em) {
     grid-template-columns: 1fr 1fr;
   }
+  @media screen and (min-width: 64em) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 `;

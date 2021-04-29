@@ -42,18 +42,21 @@ export default () => {
           </LogoBox>
 
           <Categories>
-            <Anchor to='/'>
-              <Category>Inicio</Category>
-            </Anchor>
-            <Anchor to='/categorias'>
-              <Category>Agremiados</Category>
-            </Anchor>
-            <Anchor to='/blog'>
-              <Category>Blog</Category>
-            </Anchor>
-            <Anchor to='/voluntariado'>
-              <Category>Voluntariado</Category>
-            </Anchor>
+            <Category>
+              <Anchor to='/'>Inicio</Anchor>
+            </Category>
+
+            <Category>
+              <Anchor to='/categorias'>Agremiados</Anchor>
+            </Category>
+
+            <Category>
+              <Anchor to='/blog'>Blog</Anchor>
+            </Category>
+
+            <Category>
+              <Anchor to='/voluntariado'>Voluntariado</Anchor>
+            </Category>
           </Categories>
         </NavDesktop>
       )}
