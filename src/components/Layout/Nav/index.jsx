@@ -24,7 +24,6 @@ export default () => {
   const { handleBar, window, isSelectBar, handleSelectBar } = useContext(
     Context
   );
-  console.log(window);
 
   const fadeBar = () => {
     handleSelectBar();
