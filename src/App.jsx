@@ -1,10 +1,10 @@
 import React, { Suspense } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { GlobalStyles } from './GlobalStyles';
-import Layout from './components/Layout';
 import Context from './Context';
 
 export default () => {
+  const Layout = React.lazy(() => import('./components/Layout'));
   const Home = React.lazy(() => import('./components/Pages/Home'));
   const Categories = React.lazy(() => import('./components/Pages/Categories'));
   const ListOfBusinesses = React.lazy(() =>

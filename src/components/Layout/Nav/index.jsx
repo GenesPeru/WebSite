@@ -31,7 +31,7 @@ export default () => {
     if (!isSelectBar) {
       handleBar();
     } else {
-      setTimeout(() => handleBar(), 500);
+      setTimeout(() => handleBar(), 300);
     }
   };
 

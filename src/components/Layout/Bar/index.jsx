@@ -6,11 +6,20 @@ import Logo from '@img/Logo.svg';
 import { Context } from '@src/Context';
 
 export default () => {
-  const { bar, handleBar, isSelectBar } = useContext(Context);
+  const { bar, handleBar, isSelectBar, handleSelectBar } = useContext(Context);
 
   if (!bar) {
     return null;
   }
+
+  const fadeBar = () => {
+    handleSelectBar();
+    if (!isSelectBar) {
+      handleBar();
+    } else {
+      setTimeout(() => handleBar(), 300);
+    }
+  };
 
   return ReactDOM.createPortal(
     <Main
@@ -25,23 +34,23 @@ export default () => {
       </Box>
       <Categories>
         <Category>
-          <Anchor to='/' onClick={handleBar}>
+          <Anchor to='/' onClick={fadeBar}>
             {' '}
             Inicio
           </Anchor>
         </Category>
         <Category>
-          <Anchor to='/categorias' onClick={handleBar}>
+          <Anchor to='/categorias' onClick={fadeBar}>
             Agremiados
           </Anchor>
         </Category>
         <Category>
-          <Anchor to='/blog' onClick={handleBar}>
+          <Anchor to='/blog' onClick={fadeBar}>
             Blog
           </Anchor>
         </Category>
         <Category>
-          <Anchor to='/voluntariado' onClick={handleBar}>
+          <Anchor to='/voluntariado' onClick={fadeBar}>
             Voluntariado
           </Anchor>
         </Category>
