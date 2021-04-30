@@ -7,6 +7,7 @@ const Provider = ({ children }) => {
   const [isSelectBar, setSelectBar] = useState(false);
   const [managers, setManagers] = useState([]);
   const [categories, setCategories] = useState([]);
+  const [teams, setTeams] = useState([]);
   const window = useWindowDimensions();
 
   const value = {
@@ -22,10 +23,9 @@ const Provider = ({ children }) => {
     managers,
     setManagers,
     categories,
-    handleCategories: (data, i) => {
-      if (i != undefined) setCategories(...data[i]);
-      else setCategories(data);
-    },
+    setCategories,
+    teams,
+    setTeams,
   };
 
   return <Context.Provider value={value}>{children}</Context.Provider>;

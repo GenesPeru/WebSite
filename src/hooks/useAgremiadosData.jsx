@@ -3,7 +3,7 @@ import { Context } from '@src/Context';
 import { useContext } from 'react';
 
 export const useCategoriesData = () => {
-  const { categories, handleCategories } = useContext(Context);
+  const { categories, setCategories } = useContext(Context);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
 
@@ -15,7 +15,7 @@ export const useCategoriesData = () => {
         .fetch('https://genes-api.herokuapp.com/categories')
         .then((res) => res.json())
         .then((categories) => {
-          handleCategories(categories, undefined);
+          setCategories(categories);
         })
         .catch((err) => {
           setError(err);
