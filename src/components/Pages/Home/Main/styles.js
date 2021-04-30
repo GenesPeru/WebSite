@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const Main = styled.main`
   height: 60vh;
   width: 100%;
+  min-height: 500px;
   @media screen and (min-width: 48em) {
     display: flex;
     justify-content: center;
@@ -53,6 +54,7 @@ export const Svg = styled.img`
 
 export const Buttons = styled.div`
   padding-top: 30px;
+  padding-bottom: 5px;
   @media screen and (min-width: 48em) {
     display: flex;
     justify-content: center;

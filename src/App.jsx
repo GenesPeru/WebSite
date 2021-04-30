@@ -2,6 +2,7 @@ import React, { Suspense } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { GlobalStyles } from './GlobalStyles';
 import Context from './Context';
+import Loader from './components/Loader';
 
 export default () => {
   const Layout = React.lazy(() => import('./components/Layout'));
@@ -19,7 +20,7 @@ export default () => {
   const NotFound = React.lazy(() => import('./components/Pages/NotFound'));
 
   return (
-    <Suspense fallback={<div />}>
+    <Suspense fallback={<Loader />}>
       <Context.Provider>
         <GlobalStyles />
         <Router>
