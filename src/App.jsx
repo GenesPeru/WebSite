@@ -1,23 +1,23 @@
-import React, { Suspense } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { GlobalStyles } from '@src/GlobalStyles';
-import Context from '@src/Context';
-import Loader from '@components/Loader';
+import React, { Suspense } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { GlobalStyles } from "@src/GlobalStyles";
+import Context from "@src/Context";
+import Loader from "@components/Loader";
 
 export default () => {
-  const Layout = React.lazy(() => import('@components/Layout'));
-  const Home = React.lazy(() => import('@components/Pages/Home'));
-  const Categories = React.lazy(() => import('@components/Pages/Categories'));
+  const Layout = React.lazy(() => import("@components/Layout"));
+  const Home = React.lazy(() => import("@components/Pages/Home"));
+  const Categories = React.lazy(() => import("@components/Pages/Categories"));
   const ListOfBusinesses = React.lazy(() =>
-    import('@components/Pages/Categories/ListOfBusinesses')
+    import("@components/Pages/Categories/ListOfBusinesses")
   );
   const ListOfVolunteers = React.lazy(() =>
-    import('@components/Pages/Volunteering/ListOfVolunteers')
+    import("@components/Pages/Volunteering/ListOfVolunteers")
   );
   const Volunteering = React.lazy(() =>
-    import('@components/Pages/Volunteering')
+    import("@components/Pages/Volunteering")
   );
-  const NotFound = React.lazy(() => import('@components/Pages/NotFound'));
+  const NotFound = React.lazy(() => import("@components/Pages/NotFound"));
 
   return (
     <Suspense fallback={<Loader />}>
@@ -26,24 +26,20 @@ export default () => {
         <Router>
           <Layout>
             <Switch>
-              <Route exact path='/'>
-                <Home />
-              </Route>
-              <Route exact path='/categorias' component={Categories}></Route>
+              <Route exact path="/" component={Home} />
+              <Route exact path="/categorias" component={Categories} />
               <Route
                 exact
-                path='/categorias/:id'
+                path="/categorias/:id"
                 component={ListOfBusinesses}
-              ></Route>
-              <Route exact path='/voluntariado' component={Volunteering} />
+              />
+              <Route exact path="/voluntariado" component={Volunteering} />
               <Route
                 exact
-                path='/voluntariado/:id'
+                path="/voluntariado/:id"
                 component={ListOfVolunteers}
-              ></Route>
-              <Route path='*'>
-                <NotFound />
-              </Route>
+              />
+              <Route path="*" component={NotFound} />
             </Switch>
           </Layout>
         </Router>
