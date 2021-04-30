@@ -17,17 +17,30 @@ const barStyle = {
   position: 'absolute',
   right: '45px',
   top: '45px',
+  zIndex: '999',
 };
 
 export default () => {
-  const { handleBar, window } = useContext(Context);
+  const { handleBar, window, isSelectBar, handleSelectBar } = useContext(
+    Context
+  );
   console.log(window);
+
+  const fadeBar = () => {
+    handleSelectBar();
+    if (!isSelectBar) {
+      handleBar();
+    } else {
+      setTimeout(() => handleBar(), 500);
+    }
+  };
+
   return (
     <header>
       {window == 'movil' ? (
         <>
           <NavMovil>
-            <i className='fas fa-bars' style={barStyle} onClick={handleBar}></i>
+            <i className='fas fa-bars' style={barStyle} onClick={fadeBar}></i>
           </NavMovil>
           <LogoMovil
             className='animate__animated animate__bounceInLeft'

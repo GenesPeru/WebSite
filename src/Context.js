@@ -4,6 +4,7 @@ export const Context = createContext();
 
 const Provider = ({ children }) => {
   const [bar, setBar] = useState(false);
+  const [isSelectBar, setSelectBar] = useState(false);
   const window = useWindowDimensions();
 
   const value = {
@@ -11,6 +12,10 @@ const Provider = ({ children }) => {
     bar,
     handleBar: () => {
       setBar(!bar);
+    },
+    isSelectBar,
+    handleSelectBar: () => {
+      setSelectBar(!isSelectBar);
     },
   };
 
