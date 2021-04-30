@@ -1,23 +1,23 @@
 import React, { Suspense } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { GlobalStyles } from './GlobalStyles';
-import Context from './Context';
-import Loader from './components/Loader';
+import { GlobalStyles } from '@src/GlobalStyles';
+import Context from '@src/Context';
+import Loader from '@components/Loader';
 
 export default () => {
-  const Layout = React.lazy(() => import('./components/Layout'));
-  const Home = React.lazy(() => import('./components/Pages/Home'));
-  const Categories = React.lazy(() => import('./components/Pages/Categories'));
+  const Layout = React.lazy(() => import('@components/Layout'));
+  const Home = React.lazy(() => import('@components/Pages/Home'));
+  const Categories = React.lazy(() => import('@components/Pages/Categories'));
   const ListOfBusinesses = React.lazy(() =>
-    import('./components/Pages/Categories/ListOfBusinesses')
+    import('@components/Pages/Categories/ListOfBusinesses')
   );
   const ListOfVolunteers = React.lazy(() =>
-    import('./components/Pages/Volunteering/ListOfVolunteers')
+    import('@components/Pages/Volunteering/ListOfVolunteers')
   );
   const Volunteering = React.lazy(() =>
-    import('./components/Pages/Volunteering')
+    import('@components/Pages/Volunteering')
   );
-  const NotFound = React.lazy(() => import('./components/Pages/NotFound'));
+  const NotFound = React.lazy(() => import('@components/Pages/NotFound'));
 
   return (
     <Suspense fallback={<Loader />}>

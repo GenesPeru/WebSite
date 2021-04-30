@@ -1,8 +1,7 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import ReactDOM from 'react-dom';
 import { Main, Box, Img, Categories, Category, Anchor } from './styles';
 import Logo from '@img/Logo.svg';
-
 import { Context } from '@src/Context';
 
 export default () => {

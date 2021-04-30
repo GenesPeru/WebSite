@@ -1,7 +1,7 @@
 import React from 'react';
 import { useManagersData } from '@src/hooks/useManagersData';
 import { Container } from './styles';
-import Manager from './../Manager';
+import Manager from '@pages/Home/Team/Manager';
 
 export default () => {
   const { managers } = useManagersData();

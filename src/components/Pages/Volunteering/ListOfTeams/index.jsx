@@ -1,5 +1,5 @@
 import React from 'react';
-import Team from '../Team';
+import Team from '@pages/Volunteering/Team';
 import { useVolunteersData } from '@src/hooks/useVolunteersData';
 import { Title, Container, LinkTeam } from './styles';
 

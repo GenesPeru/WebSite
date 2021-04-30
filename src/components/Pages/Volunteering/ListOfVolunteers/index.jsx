@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { useParams } from 'react-router-dom';
-import Volunteer from '../Volunteer';
+import Volunteer from '@pages/Volunteering/Volunteer';
 import { Title, Container, TitleCategory, Category } from './styles';
 import { Context } from '@src/Context';
 

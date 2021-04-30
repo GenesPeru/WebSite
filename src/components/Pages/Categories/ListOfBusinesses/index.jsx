@@ -1,8 +1,7 @@
 import React, { useContext } from 'react';
 import { useParams } from 'react-router-dom';
-import { useFindBusinessesByCaterory } from '@src/hooks/useAgremiadosData';
 import { Title, Container } from './styles';
-import Business from '../Business';
+import Business from '@pages/Categories/Business';
 import { Context } from '@src/Context';
 
 export default () => {

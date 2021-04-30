@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, LinkCategory } from './styles';
 import { useCategoriesData } from '@src/hooks/useAgremiadosData';
-import Category from '../Category';
+import Category from '@pages/Categories/Category';
 import Loader from '@components/Loader';
 
 export default () => {
