@@ -1,4 +1,6 @@
 import React, { useContext } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 import {
   LogoMovil,
   NavMovil,
@@ -39,7 +41,7 @@ export default () => {
       {window == 'movil' ? (
         <>
           <NavMovil>
-            <i className='fas fa-bars' style={barStyle} onClick={fadeBar}></i>
+            <FontAwesomeIcon icon={faBars} style={barStyle} onClick={fadeBar} />
           </NavMovil>
           <LogoMovil
             className='animate__animated animate__bounceInLeft'

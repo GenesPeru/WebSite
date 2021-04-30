@@ -1,5 +1,13 @@
 import React from 'react';
 import LogoBlack from '@img/LogoBlack.svg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faTwitter,
+  faFacebookF,
+  faLinkedinIn,
+  faInstagram,
+  faYoutube,
+} from '@fortawesome/free-brands-svg-icons';
 import {
   Footer,
   BoxImg,
@@ -35,7 +43,7 @@ export default () => (
           rel='noopener noreferrer'
           aria-label='Twitter'
         >
-          <i style={iconoStyle} className='fab fa-twitter'></i>
+          <FontAwesomeIcon icon={faTwitter} style={iconoStyle} />
         </a>
       </Social>
       <Social>
@@ -45,7 +53,7 @@ export default () => (
           rel='noopener noreferrer'
           aria-label='Facebook'
         >
-          <i style={iconoStyle} className='fab fa-facebook-f'></i>
+          <FontAwesomeIcon icon={faFacebookF} style={iconoStyle} />
         </a>
       </Social>
       <Social>
@@ -55,7 +63,7 @@ export default () => (
           rel='noopener noreferrer'
           aria-label='Linkedin'
         >
-          <i style={iconoStyle} className='fab fa-linkedin-in'></i>
+          <FontAwesomeIcon icon={faLinkedinIn} style={iconoStyle} />
         </a>
       </Social>
       <Social>
@@ -65,7 +73,7 @@ export default () => (
           rel='noopener noreferrer'
           aria-label='Instagram'
         >
-          <i style={iconoStyle} className='fab fa-instagram'></i>
+          <FontAwesomeIcon icon={faInstagram} style={iconoStyle} />
         </a>
       </Social>
       <Social>
@@ -75,7 +83,7 @@ export default () => (
           rel='noopener noreferrer'
           aria-label='Youtube'
         >
-          <i style={iconoStyle} className='fab fa-youtube'></i>
+          <FontAwesomeIcon icon={faYoutube} style={iconoStyle} />
         </a>
       </Social>
     </Network>
