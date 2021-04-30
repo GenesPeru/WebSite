@@ -1,20 +1,18 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import { useFindBusinessesByCaterory } from '@src/hooks/useAgremiadosData';
 import { Title, Container } from './styles';
 import Business from '../Business';
+import { Context } from '@src/Context';
 
 export default () => {
   const { id } = useParams();
-  const { listOfBusinesses } = useFindBusinessesByCaterory(id);
-  const data =
-    listOfBusinesses.businesses != undefined ? listOfBusinesses.businesses : [];
-  console.log(data);
+  const { categories } = useContext(Context);
   return (
     <>
-      <Title>{listOfBusinesses.name}</Title>
+      <Title>{categories[id - 1].name}</Title>
       <Container>
-        {data.map((data) => (
+        {categories[id - 1].businesses.map((data) => (
           <Business key={data.id} name={data.name} image={data.imageUrl} />
         ))}
       </Container>

@@ -6,7 +6,6 @@ export const useManagersData = () => {
   const { managers, setManagers } = useContext(Context);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
-  console.log(managers.length);
 
   useEffect(function () {
     if (managers.length === 0) {
@@ -23,9 +22,8 @@ export const useManagersData = () => {
         .finally(() => {
           setLoading(false);
         });
-      return { error, loading, managers };
     }
   }, []);
 
-  return managers;
+  return { error, loading, managers };
 };

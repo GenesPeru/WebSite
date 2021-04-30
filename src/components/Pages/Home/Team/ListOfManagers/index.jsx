@@ -4,8 +4,7 @@ import { Container } from './styles';
 import Manager from './../Manager';
 
 export default () => {
-  const managers = useManagersData();
-  console.log(managers);
+  const { managers } = useManagersData();
   return (
     <Container>
       {managers.map((manager) => (

@@ -5,8 +5,7 @@ import Category from '../Category';
 import Loader from '@components/Loader';
 
 export default () => {
-  const { categories = [], loading } = useCategoriesData();
-  console.log({ loading });
+  const { categories, loading } = useCategoriesData();
   return (
     <>
       {loading && <Loader content='true' />}
