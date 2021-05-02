@@ -11,6 +11,7 @@ export default () => {
   const ListOfBusinesses = React.lazy(() =>
     import("@components/Pages/Categories/ListOfBusinesses")
   );
+  const Blog = React.lazy(() => import("@components/Pages/Blog"));
   const ListOfVolunteers = React.lazy(() =>
     import("@components/Pages/Volunteering/ListOfVolunteers")
   );
@@ -33,6 +34,7 @@ export default () => {
                 path="/categorias/:id"
                 component={ListOfBusinesses}
               />
+              <Route exact path="/blog" component={Blog} />
               <Route exact path="/voluntariado" component={Volunteering} />
               <Route
                 exact
