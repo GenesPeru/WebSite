@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 export const Box = styled.div`
   min-width: 100vw;
   display: flex;
@@ -8,6 +8,9 @@ export const Box = styled.div`
   }
   @media screen and (min-width: 64em) {
     min-width: 33.333vw;
+  }
+  @media screen and (min-width: 80em) {
+    min-width: 25vw;
   }
 `;
 
