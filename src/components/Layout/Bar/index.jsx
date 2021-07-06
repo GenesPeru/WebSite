@@ -44,8 +44,8 @@ export default () => {
           </Anchor>
         </Category>
         <Category>
-          <Anchor to='/blog' onClick={fadeBar}>
-            Blog
+          <Anchor to='/conferencia' onClick={fadeBar}>
+            Conferencias
           </Anchor>
         </Category>
         <Category>

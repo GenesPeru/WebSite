@@ -23,9 +23,8 @@ const barStyle = {
 };
 
 export default () => {
-  const { handleBar, window, isSelectBar, handleSelectBar } = useContext(
-    Context
-  );
+  const { handleBar, window, isSelectBar, handleSelectBar } =
+    useContext(Context);
 
   const fadeBar = () => {
     handleSelectBar();
@@ -65,7 +64,7 @@ export default () => {
             </Category>
 
             <Category>
-              <Anchor to='/blog'>Blog</Anchor>
+              <Anchor to='/conferencia'>Conferencias</Anchor>
             </Category>
 
             <Category>

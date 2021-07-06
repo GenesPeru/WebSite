@@ -15,6 +15,7 @@ export const Container = styled.div`
   @media screen and (min-width: 48em) {
     grid-template-columns: 1fr 1fr;
   }
+  grid-gap: 20px;
 `;
 
 export const LinkTeam = styled(Link)`
