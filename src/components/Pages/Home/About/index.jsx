@@ -1,5 +1,5 @@
 import React from 'react';
-import { Section, Title, Description, BoxButton } from './styles';
+import { Section, Title, Description, BoxButton, ButtonLink } from './styles';
 import Button from '@components/Button';
 
 export default () => (
@@ -12,7 +12,7 @@ export default () => (
         siendo pioneros en Latinoaerica.
       </Description>
       <BoxButton>
-        <Button primary>Leer más</Button>
+        <ButtonLink href='#about'>Leer más</ButtonLink>
       </BoxButton>
     </Section>
   </>

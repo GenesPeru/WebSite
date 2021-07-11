@@ -16,7 +16,7 @@ export default () => {
   const { handleBar, window } = useContext(Context);
   return (
     <>
-      <Section>
+      <Section id='about'>
         <Content>
           <Description>
             <Title>Mision</Title>

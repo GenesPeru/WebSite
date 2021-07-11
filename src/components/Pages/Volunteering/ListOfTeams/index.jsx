@@ -11,7 +11,11 @@ export default () => {
       <Container>
         {teams.map((team) => (
           <LinkTeam key={team.id} to={`/voluntariado/${team.id}`}>
-            <Team name={team.name} semester={team.semester} />
+            <Team
+              name={team.name}
+              semester={team.semester}
+              photo={team.photoUniversityUrl}
+            />
           </LinkTeam>
         ))}
       </Container>

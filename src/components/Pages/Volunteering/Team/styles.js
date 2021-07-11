@@ -9,6 +9,9 @@ export const Box = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: relative;
+  max-width: 280px;
+  margin: auto;
   :hover {
     background-color: #36558f;
 
@@ -29,4 +32,8 @@ export const Semester = styled.p`
   padding-top: 10px;
   font-size: 23px;
   color: black;
+`;
+
+export const LogoUniversity = styled.img`
+  width: 40px;
 `;
