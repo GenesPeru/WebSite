@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 
 export const Title = styled.h1`
-  margin: 0 auto;
+  margin: 30px auto;
   text-align: center;
   width: 70%;
+  margin-bottom: 50px;
 `;
 
 export const Category = styled.div`

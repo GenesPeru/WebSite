@@ -13,6 +13,8 @@ export const Box = styled.div`
 
 export const Img = styled.img`
   height: 70%;
+  margin-top: 10px;
+  width: inherit;
 `;
 
 export const Title = styled.h2`

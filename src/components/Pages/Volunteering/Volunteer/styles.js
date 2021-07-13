@@ -16,6 +16,7 @@ export const Card = styled.div`
   padding: 20px 0;
   width: 70%;
   background: #fff;
+
   @media screen and (min-width: 35.5em) {
     max-width: 380px;
   }
@@ -25,9 +26,10 @@ export const Card = styled.div`
 `;
 export const Image = styled.img`
   display: flex;
+  height: 250px;
   width: 80%;
   margin: 0 auto;
-  border-radius: 14px;
+  border-radius: 10px;
   @media screen and (min-width: 48em) {
     height: 320px;
   }

@@ -14,7 +14,7 @@ export default () => (
       <title>Conferencias | Genes Perú</title>
       <meta name='description' content='Ong' />
     </Helmet>
-    <Title>Conferencias </Title>
+    <Title>Conferencias de Genes Perú</Title>
     <ContainerFrameYoutube>
       <BoxFrameYoutube>
         <FrameYoutube
