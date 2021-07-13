@@ -11,7 +11,7 @@ export default () => {
   const ListOfBusinesses = React.lazy(() =>
     import('@components/Pages/Categories/ListOfBusinesses')
   );
-  const Blog = React.lazy(() => import('@components/Pages/Blog'));
+  const Conference = React.lazy(() => import('@components/Pages/Conferences'));
   const ListOfVolunteers = React.lazy(() =>
     import('@components/Pages/Volunteering/ListOfVolunteers')
   );
@@ -34,8 +34,8 @@ export default () => {
                 path='/categorias/:id'
                 component={ListOfBusinesses}
               />
-              <Route exact path='/blog' component={Blog} />
-              <Route exact path='/conferencia' component={Blog} />
+              <Route exact path='/blog' component={Conference} />
+              <Route exact path='/conferencia' component={Conference} />
               <Route exact path='/voluntariado' component={Volunteering} />
               <Route
                 exact
